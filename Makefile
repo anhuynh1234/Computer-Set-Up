@@ -6,7 +6,7 @@ config:
 	git config --global user.name "An Huynh"
 
 show_key:
-	cat ~/.ssh/id_ed25519
+	cat ~/.ssh/id_ed25519.pub
 
 push:
 	git add -A
