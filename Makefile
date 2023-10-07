@@ -16,3 +16,6 @@ push:
 pull:
 	git pull
 
+g++-setup:
+	sudo apt-get update
+	sudo apt-get install build-essential gdb
