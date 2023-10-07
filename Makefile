@@ -5,6 +5,9 @@ config:
 	git config --global user.email "thaianhuynh1234@gmail.com"
 	git config --global user.name "An Huynh"
 
+show_key:
+	cat ~/.ssh/id_ed25519
+
 push:
 	git add -A
 	git commit -m "Added another command"
