@@ -30,3 +30,7 @@ rbenv:
 
 ruby:
 	rbenv install 3.2.2 --verbose
+	rbenv global 3.2.2
+
+test:
+	echo 'eval "$$(rbenv init -)"' >> ~/.bashrc
