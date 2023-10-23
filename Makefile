@@ -19,3 +19,13 @@ pull:
 g++-setup:
 	sudo apt-get update
 	sudo apt-get install build-essential gdb
+
+rbenv:
+	git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+	echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+	echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+	mkdir -p "$(rbenv root)"/plugins
+	git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
+
+ruby:
+	rbenv install 3.2.2 --verbose
