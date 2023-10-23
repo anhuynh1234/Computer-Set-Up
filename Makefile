@@ -21,6 +21,7 @@ g++-setup:
 	sudo apt-get install build-essential gdb
 
 rbenv:
+	sudo apt install gcc make libssl-dev libreadline-dev zlib1g-dev libsqlite3-dev libyaml-dev
 	git clone https://github.com/rbenv/rbenv.git ~/.rbenv
 	echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
 	echo 'eval "$(rbenv init -)"' >> ~/.bashrc
